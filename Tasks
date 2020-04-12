@@ -1,0 +1,20 @@
+### TASK 1: to create directories using a single mkdir command
+```
+mkdir -p A/{B/{D/{I/M/Z,J/L/Z},E/H/L/Z},C/{F/H/L/Z,G/K/L/Z}}
+```
+
+_________________________________________________________________________________
+
+###TASK 2: changeing the file permission of the command "date"and only providing acess to a single user 
+
+sudo su
+useradd -s /bin/date anu
+chmod -x /bin/date
+ls -l /bin/date
+setfacl -m u:ttt:rwx /bin/date
+exit
+date
+sudo su - anu
+
+___________________________________________________________________________________
+
