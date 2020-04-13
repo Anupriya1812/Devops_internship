@@ -18,3 +18,13 @@ sudo su - anu
 
 ___________________________________________________________________________________
 
+###TASK 3:To create two users and a file in each and copy the file from one user to another
+useradd kit 
+mkdir s
+exit
+useradd kat
+mkdir p
+exit
+vim /etc/sudoers
+sudo cp -r /home/kit/s /home/kat
+sudo cp -r /home/kat/p /home/kit
